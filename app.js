@@ -80,6 +80,10 @@ library=[
 
 names=[{'a':'1'},{'a':'2'}];
 
+app.get('/', (req,res)=>{
+    res.render('home');
+});
+
 app.get('/home', (req,res)=>{
     res.render('home');
 });
